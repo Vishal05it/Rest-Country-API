@@ -2,8 +2,9 @@ let switchMode = document.querySelector("#switchMode");
 let flagSect = document.querySelector("#flagSect");
 let body = document.body;
 let currDisplay = [];
+let maxCpp = 16;
 let stIdx = 0;
-let endIdx = 16;
+let endIdx = maxCpp;
 let searchBar = document.querySelector("#searchBar");
 let allCountry;
 let showRegions = false;
@@ -14,7 +15,6 @@ let allRgn = document.querySelector("#allRgn");
 let prevBtn = document.querySelector(".prev");
 let nextBtn = document.querySelector(".next");
 let page = 1;
-let maxCpp = 16;
 let totalPages;
 oneRegion.forEach((x) => {
     x.addEventListener("click", (e) => {
